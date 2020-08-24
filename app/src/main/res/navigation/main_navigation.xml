@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragmentHome">
+    <action
+        android:id="@+id/action_to_HomeFragment"
+        app:destination="@id/fragmentHome" />
+    <action
+        android:id="@+id/action_to_addMovieFragment"
+        app:destination="@id/fragmentAddMovie" />
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.netflixapp.fragments.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragmentAddMovie"
+        android:name="com.example.netflixapp.fragments.FragmentAddMovie"
+        android:label="fragment_add_movie"
+        tools:layout="@layout/fragment_add_movie" />
+</navigation>
